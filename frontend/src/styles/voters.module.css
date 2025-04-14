@@ -1,0 +1,90 @@
+@import url("themes.css");
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container h2{
+    color:var(--primary-clr);
+
+}
+.votersHeader {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.fieldInput{
+    background-color: var(--canvas-inverted-clr);
+    border-radius: 5px;
+    border: 1px solid var(--canvas-inverted-clr);
+    display: flex;
+    justify-content: center;
+}
+.votersSearch {
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    border: none;
+}
+.fieldInput span{
+    color: var(--text-inverted-clr);
+    padding:5px;
+}
+
+.votersSelect {
+    width: 200px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.votersTable {
+    margin: 10px;
+    text-align: center;
+}
+
+.votersTable th {
+    background-color: var(--primary-clr);
+    color: var(--text-inverted-clr);
+    padding: 10px;
+    border: 1px solid var(--text-inverted-clr);
+}
+
+.votersTable td {
+    background-color: var(--canvas-clr);
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.votersDelete {
+    color: red;
+}
+
+.votersDelete button {
+    color: rgb(196, 42, 42);
+    margin-right: 5px;
+    width: 70px;
+    background: none;
+    border: none;
+} 
+.votersDelete:hover button{
+   cursor: pointer;
+   background-color: red;
+   color: var(--text-inverted-clr);
+   font-weight: 500;
+   font-size: 20px;
+}
+.votersDelete:hover{
+    cursor: pointer;
+    background-color: red;
+    color: var(--text-inverted-clr);
+    border-radius: 5px;
+ }
+
+ @media (min-width: 768px) {
+    .container{
+        background-color: var(--canvas-clr);
+        border-radius:10px;
+        padding-left: 200px;
+    }
+  
+  }

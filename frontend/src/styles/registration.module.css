@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('./themes.css');
+
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--text-primary-clr);
+}
+::selection{
+  color:var(--text-primary-clr);
+  background: var(--tertiary-clr);
+}
+.container {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+}
+.signupImg{
+  display: none;
+  width: 400px;
+  height: 612px;
+  margin: 10px;
+}
+.signupImg img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.regContainer{
+  width: 330px;
+  background: var(--text-inverted-clr);
+  text-align: center;
+  border-radius: 5px;
+}
+.regContainer header{
+  font-size: 35px;
+  font-weight: 600;
+}
+.regContainer .formOuter{
+  width: 100%;
+  overflow: hidden;
+}
+.regContainer .formOuter form{
+  display: flex;
+  width: 400%;
+}
+.formOuter form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.formOuter form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-clr);
+}
+.formOuter form .page .field{
+  width: 100%;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -20px;
+  font-weight: 500;
+  color: var(--primary-clr);
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--primary-clr);
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid var(--primary-clr);
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: var(--secondary-clr);
+  margin-top: -20px;
+  border-radius: 5px;
+  color: var(--text-inverted-clr);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page button:hover{
+  background: var(--primary-clr);
+  color: var(--text-inverted-clr);
+}
+form .page .btns{
+  display: flex;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns .prev{
+  height: 50px;
+  margin-right: 3px;
+  font-size: 17px;
+  border: 1px solid var(--primary-clr);
+  color: var(--secondary-clr);
+  width: 50%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+form .page .btns .prev:hover{
+  color: var(--text-inverted-clr);
+  background: var(--primary-clr);
+  transition: 0.3s;
+}
+form .page .btns .next{
+  margin-left: 3px;
+  color: var(--text-inverted-clr);
+  background: var(--secondary-clr);
+  width: 50%;
+  height: 50px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+}
+form .page .btns .next:hover{
+  cursor: pointer;
+  color: var(--text-inverted-clr);
+  background: var(--primary-clr);
+  transition:0.3s;
+}
+.regContainer header{
+  color: var(--primary-clr);
+}
+.regContainer .progressBar{
+  display: flex;
+  margin: 10px 0;
+  user-select: none;
+}
+.regContainer .progressBar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.regContainer .progressBar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-clr);
+  margin-bottom: 8px;
+}
+.progressBar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid var(--primary-clr);
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progressBar .step .bullet.active{
+  border-color: var(--secondary-clr);
+  background: var(--secondary-clr);
+}
+.progressBar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progressBar .step .bullet.active span{
+  display: none;
+}
+.progressBar .step .bullet:before,
+.progressBar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: var(--primary-clr);
+}
+.progressBar .step .bullet.active:after{
+  background: var(--secondary-clr);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progressBar .step:last-child .bullet:before,
+.progressBar .step:last-child .bullet:after{
+  display: none;
+}
+.progressBar .step p.active{
+  color: var(--secondary-clr);
+  transition: 0.2s linear;
+}
+.progressBar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progressBar .step .check.active{
+  display: block;
+  color: var(--text-inverted-clr);
+}
+
+.regContainer .signLink a{
+  text-decoration: none;
+  font-size: 16px;
+
+}
+/* Tablet Styles (max-width: 768px) */
+@media (min-width: 768px) {
+   .signupImg{
+    display: inline-block;
+    width: 300px;
+    height: 512px;
+    margin: 10px;
+    padding:30px 20px;
+    background: url("/public/images/signin-img.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .signupImg h2, .signupImg p{
+    color: var(--text-inverted-clr);
+  }
+
+.formOuter .signLink a{
+  text-decoration: none;
+  color: var(--primary-clr);
+
+}
+}
+/* Desktop Styles (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container{
+    padding: 10px;
+  }
+  .signinImg, .signupImg{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+  }
+  .formOuter .signLink span{
+    text-decoration: none;
+    color: var(--secondary-clr);
+  
+  }
+  .formOuter .signLink span:hover{
+    text-decoration: underline;
+  
+  }
+  .confirm{
+    margin: 10px;
+  }
+  .confirm p{
+    margin: 10px;
+  }
+}

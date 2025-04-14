@@ -1,0 +1,391 @@
+
+
+body{
+    text-align: center;
+}
+
+.nav{
+    position: fixed;
+    color: white;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    left:400px;
+    font-size: 1.5rem;
+    top: 10px;
+
+}
+.connected{
+    position: fixed;
+    left: 0;
+    text-align: left;
+    padding: 10px;
+    top: 30px;
+}
+.connected span{
+    color:white;
+    font-weight: 600;
+    display: block;
+    
+}
+.connected p {
+    margin: 0;
+
+}
+.connected button{
+    left:10px;
+    position: fixed;
+    top:10px;
+    height: 30px;
+    font-size: 20px;
+}
+
+table{
+    border:1px solid white;
+    border-collapse: collapse;
+    width: 850px;
+}
+h3{
+    border-bottom: 2px solid black;
+    margin: 0 10px;
+}
+h4{
+    display: inline-block;
+}
+
+.circle{
+    display: flex;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    transform:rotate(315deg);
+    border: 10px solid;
+}
+.circle .inner{
+    transform: rotate(45deg);
+}
+.detail{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0 1px 2px grey;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+}
+.details table{
+text-align: left;
+width: 250px;
+margin: 5px;
+}
+.details table th{
+    background-color: none;
+    color: black;
+}
+.details label{
+        background: white;
+        margin-left: 20px;
+        padding: 0 10px;
+        position: absolute;
+        font-size: 12px;
+}
+.details input{
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+    color: purple;
+    margin: 10px;
+    background: white;
+}
+.details input:focus{
+ outline: none;
+
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+ .grey{
+    background: grey;
+
+}
+
+.one{
+    border: 10px solid #7d2ae8 ;
+    border-top-color: grey;
+}
+.results-container{
+    background: white;
+    box-shadow: 0 5px 10px purple;
+    border-radius: 10px;
+}
+.stat-box{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 250px;
+}
+.two{
+    border: 10px solid grey;
+    border-top-color: #7d2ae8 ;
+}
+
+
+.turnout-box{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0 1px 2px grey;
+    border-radius: 5px;
+}
+
+.red{
+    background:  #7d2ae8;
+
+}
+.green{
+    background: green;
+}
+.black{
+    background: black;
+}
+.section{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.section .voter-container{
+    
+    height: 110px;
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 1px 2px grey;
+    border-radius: 5px;
+    
+}
+.section .info-box{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    box-shadow: 0 1px 2px grey;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.head{
+    border-bottom: 1px solid black;
+}
+
+.voter-details-box table{
+    width: 350px;
+}
+
+table .underline{
+    border-bottom: 2px solid black;
+}
+.candidate-details table{
+    width: 850px;
+
+}
+.candidates-details-box table td{
+    padding: 10px;
+    border-bottom: 2px solid grey;
+}
+.candidates-details-box table th{
+    background-color:  #7d2ae8;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border:1px solid white;
+}
+.candidates-details-box table .prof-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:2px solid  #7d2ae8;
+    
+}
+.candidates-details-box table .name{
+
+    border: none;
+    padding: 0 10px;
+}
+.results-container .candidate-card{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 1px 2px grey;
+    margin: 10px;
+}
+.candidate-card .name{
+    color: #7d2ae8;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.candidate-card .candidate-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #7d2ae8;
+}
+.candidate-card .description{
+    color: grey;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+}
+.results-container .candidate-details{
+    display: flex;
+}
+.container .green, .contaniner .blue, .container .red,.container.orange{
+background: green;
+width: 300px;
+height: 200px;
+margin: 10px;
+}
+
+.pie-chart{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #7d2ae8;
+}
+.pie-chart .slice{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+}
+.pie-chart .slice:nth-child(1){
+    transform: rotate(90deg);
+    border-radius: 50%;
+    background-color: #7d2ae8;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+
+}
+.pie-chart .slice:nth-child(2){
+    transform: rotate(250deg);
+    border-radius: 50%;
+    background-color: green;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+
+}
+.pie-chart .slice:nth-child(3){
+    transform: rotate(160deg);
+    border-radius: 50%;
+    background-color: grey;
+    clip-path: polygon(50% 50%, 100% 70%, 100% 100%, 50% 100%);
+
+}
+.pie-chart .slice:nth-child(4){
+    transform: rotate(0deg);
+    border-radius: 50%;
+    background-color: black;
+    clip-path: polygon(50% 50%, 100% 30%, 100% 100%, 50% 100%);
+
+}
+
+.image-box{
+    text-align: center;
+}
+.image-box .image{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #7d2ae8;
+    border-radius: 10px;
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    top: 0;
+}
+.settings{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.admin-section{
+    display: flex;
+    justify-content: space-between;
+}
+.admin-section .admin-box{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    box-shadow: 0 1px 2px grey;
+    border-radius: 5px;
+    margin: 5px;
+}
+.details .upload{
+    height: 40px;
+}
+.election-box{
+    width: 420px;
+    box-shadow: 0 1px 2px grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.add-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-card:hover {
+    background: #ddd;
+  }
+  
+  .add-content {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .plus-icon {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  

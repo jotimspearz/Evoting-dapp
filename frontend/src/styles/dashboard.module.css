@@ -1,0 +1,40 @@
+@import url('themes.css');
+.container{
+    background-color: var(--canvas-clr);
+    border-radius:10px;
+}
+.container h2{
+    color:var(--primary-clr);
+
+}
+.section{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+.detail{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--canvas-clr);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+.detail h2{
+    color: var(--primary-clr);
+    font-size: 30px;
+}
+
+/* Tablet Styles (max-width: 768px) */
+@media (min-width: 768px) {
+    .container{
+        background-color: var(--canvas-clr);
+        border-radius:10px;
+        padding-left: 200px;
+    }
+  
+  }

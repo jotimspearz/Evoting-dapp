@@ -1,0 +1,215 @@
+
+@import url('themes.css');
+body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    background: var(--canvas-clr);
+}
+.landingMain {
+    background: var(--grey);
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.landingHero {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.landingHeading {
+    padding-top: 10px;
+    color: var(--primary-clr);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.landingHeading p{
+    font-size: 16px;
+}
+
+.landingCTA {
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: var(--primary-clr);
+    color: var(--text-inverted-clr);
+    border: none;
+}
+
+.featuresSection {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.featuresSection h2{
+    color: var(--primary-clr);
+    font-size: 16px;
+}
+.featuresSection p{
+    font-size: 14px;
+}
+.featureCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--white);
+    padding: 5px 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.featureIcon {
+    color: var(--primary-clr);
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.howSection {
+    margin: 0 auto;
+}
+
+.howSection h3 {
+    color: var(--primary-clr);
+    border: none;
+    text-align: center;
+}
+.howStep {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.howIcon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--primary-clr);
+} 
+/* Tablet styles */
+@media (min-width: 768px) {
+    .landingMain {
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+       
+    }
+    .landingHero {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .landingHeading p{
+        font-size: 30px;
+    }
+    .landingCTA {
+        margin: 30px 0;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: var(--primary-clr);
+        color: var(--text-inverted-clr);
+    }
+    .featuresSection h2{
+        color: var(--primary-clr);
+        font-size: 24px;
+    }
+    .featureIcon {
+        color: var(--primary-clr);
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .featureCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .landingMain {
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+       
+    }
+    .landingHero {
+        margin: 20px 0;
+        text-align: center;
+        height: 300px;
+    }
+
+    .landingHeading{
+        font-size: 50px;
+    }
+    .landingHeading p{
+        font-size: 3rem;
+    }
+    .landingCTA {
+        margin: 30px 0;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: var(--primary-clr);
+        color: var(--text-inverted-clr);
+    }
+    .featuresSection{
+        gap: 10;
+        justify-content: center;
+        align-items: center;
+    }
+    .featureCard{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 250px;
+        justify-content: center;
+    }
+    .featureIcon {
+        color: var(--primary-clr);
+        font-size: 50px;
+        margin-right: 10px;
+    }
+    .howSection{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .howSection h3 {
+        font-size: 30px;
+        color: var(--primary-clr);
+        border: none;
+        text-align: center;
+    }
+    .howStep {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--white);
+        padding: 5px 10px;
+        margin: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    .landingCTA {
+        height: 50px;
+        width: 150px;
+        font-size: 24px;
+        border: none;
+    }
+    .landingCTA:hover {
+       background-color: var(--canvas-inverted-clr);
+       cursor: pointer;
+    }
+}

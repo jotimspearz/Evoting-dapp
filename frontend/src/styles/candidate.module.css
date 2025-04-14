@@ -1,0 +1,154 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: hsl(200, 50%, 9%);
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+
+
+}
+.description{
+    color: #ffffff;
+}
+.container-candidates{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: justify;
+}
+.profile-card{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    text-align: center;
+    border: none;
+
+}
+.profile-pic{
+    padding-inline: 5px;
+    width: 150px;
+    border-radius: 50%;
+    filter: brightness(70%);
+    border: 3px solid blue;
+
+}
+.pic{
+    background-color: white;
+    text-align: center;
+}
+.details{
+    padding: 1rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 10px;
+    background-color: 
+    rgb(69, 14, 223);
+    border-radius: 0px 0px 14px 14px;
+    color: aliceblue;
+    
+}
+
+.name{
+    font-weight:700;
+    color: white;
+    margin: 0;
+}
+.button{
+    display: flex;
+    gap: 10px;
+
+}
+.button button{
+    width: 100px;
+    padding: 0.8rem 1.2rem;
+    border :none;
+    background-color:orange;
+    color: white;
+    border-radius: 5px;
+}
+.button button:hover{
+    transform: translateY(-3px);
+    color: white;
+    background-color: orangered;
+
+}
+.profile-pic:hover{
+    transform:translateY(-5px);
+    filter: brightnes(100%);
+}
+.new-itme-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-row{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+
+}
+
+form input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+form input:focus-visible{
+    border:none;
+    border-bottom: 3px solid orange ;
+    outline: none;
+    padding: 5px;
+
+}
+a{
+    color: orange;
+}
+form label{
+    margin: 5px;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+}
+form a{
+    display: block;
+    color: orange;
+    text-align: right;
+    margin-top: 10px;
+    font-size: .8em;
+}
+form button{
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius:5px;
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+}
+form button:hover{
+    color: black;
+    cursor: pointer;
+    background-color: rgb(21, 150, 201);
+}
+.container{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align:center ;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+}

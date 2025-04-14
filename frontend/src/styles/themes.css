@@ -1,0 +1,21 @@
+/* Default Theme (Light Mode) */
+:root{
+
+  --canvas-clr: #e9ecec;
+--canvas-inverted-clr: #333333;
+
+--primary-clr: #2F89FC;;
+--secondary-clr: #d43f8d;
+
+--text-primary-clr: #222222;
+--text-inverted-clr: #ffffff;
+
+--box-shadow:0 5px 10px rgba(0, 0, 0, 0.3);
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+  }
